@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={GeistSans.className}>
+    <main className={`${GeistSans.className} flex flex-col items-center`}>
       <Component {...pageProps} />
     </main>
   );
