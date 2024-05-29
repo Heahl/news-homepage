@@ -42,7 +42,7 @@ export const CtaArticles: React.FC<ArticleProps> = ({ articles }) => {
             <div className="md:w1/2 flex h-full w-full flex-col">
               <p className="mb-2 font-light">{article.content}</p>
               {article.type === "cta" && (
-                <button className="mt-2 h-10 w-40 bg-soft-red px-4 py-2 text-sm font-medium uppercase tracking-widest">
+                <button className="mt-2 h-10 w-40 bg-soft-red px-4 py-2 text-sm font-medium uppercase tracking-widest hover:cursor-pointer hover:bg-very-dark-blue hover:text-white">
                   Read More
                 </button>
               )}
@@ -63,7 +63,9 @@ export const NewArticles: React.FC<ArticleProps> = ({ articles }) => {
       <div className="flex h-full w-full flex-col divide-y">
         {articles.map((article) => (
           <div key={article.id} className="w-full border-gray-400 pb-4">
-            <h2 className="mt-4 text-xl font-semibold">{article.header}</h2>
+            <h2 className="mt-4 text-xl font-semibold hover:cursor-pointer hover:text-soft-orange">
+              {article.header}
+            </h2>
             <p className="my-3 text-grayish-blue/70">{article.content}</p>
           </div>
         ))}
@@ -85,7 +87,7 @@ export const NumberedListArticles: React.FC<ArticleProps> = ({ articles }) => {
             alt={article.header}
           />
           <div className="flex w-2/3 flex-col">
-            <h1 className="mb-3 text-4xl font-bold text-soft-red">
+            <h1 className="mb-3 text-4xl font-bold text-soft-red hover:cursor-pointer hover:text-soft-red">
               {(index + 1).toString().padStart(2, "0")}
             </h1>
             <h2 className="mb-2 text-xl font-semibold md:font-bold">
