@@ -66,11 +66,21 @@ const MenuIcon: React.FC<MenuIconProps> = ({ menuOpen, toggleMenu }) => {
       </div>
 
       <div className="hidden gap-6 px-6 text-lg font-light tracking-wide md:flex lg:text-xl">
-        <button>Home</button>
-        <button>New</button>
-        <button>Popular</button>
-        <button>Trending</button>
-        <button>Categories</button>
+        <button className="hover:cursor-pointer hover:text-soft-red">
+          Home
+        </button>
+        <button className="hover:cursor-pointer hover:text-soft-red">
+          New
+        </button>
+        <button className="hover:cursor-pointer hover:text-soft-red">
+          Popular
+        </button>
+        <button className="hover:cursor-pointer hover:text-soft-red">
+          Trending
+        </button>
+        <button className="hover:cursor-pointer hover:text-soft-red">
+          Categories
+        </button>
       </div>
     </>
   );
