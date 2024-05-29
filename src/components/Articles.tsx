@@ -56,7 +56,7 @@ export const CtaArticles: React.FC<ArticleProps> = ({ articles }) => {
 
 export const NewArticles: React.FC<ArticleProps> = ({ articles }) => {
   return (
-    <div className="mb-8 flex flex-col overflow-y-auto bg-very-dark-blue px-2 pt-3 text-white md:col-span-1 md:col-start-3 md:row-span-3 md:grid md:grid-cols-1 lg:px-4">
+    <div className="mb-8 flex flex-col bg-very-dark-blue px-2 pt-3 text-white md:col-span-1 md:col-start-3 md:row-span-3 md:grid md:grid-cols-1 md:overflow-y-auto lg:px-4">
       <h1 className="mb-4 self-start text-3xl font-semibold text-soft-orange">
         New
       </h1>

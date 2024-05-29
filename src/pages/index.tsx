@@ -127,7 +127,7 @@ export default function Home() {
           <MenuIcon menuOpen={menuOpen} toggleMenu={toggleMenu} />
         </div>
         {/* Content */}
-        <div className="mt-20 flex h-[100vh] w-full flex-col gap-4 px-4 pb-20 md:grid md:grid-cols-3 md:grid-rows-5 md:pt-14 lg:gap-8">
+        <div className="mt-20 flex h-[100vh] w-full flex-col gap-4 px-4 pb-20 md:grid md:grid-cols-3 md:grid-rows-5 md:pb-0 md:pt-14 lg:gap-8">
           <CtaArticles articles={ctaArticles} />
           <NewArticles articles={newArticles} />
           <NumberedListArticles articles={numberedListArticles} />
